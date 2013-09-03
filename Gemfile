@@ -27,3 +27,4 @@ gem 'debugger', group: [:development, :test]
 
 #core
 gem 'pismo'
+gem 'imgkit'

@@ -13,6 +13,11 @@ class ArticlesController < ApplicationController
       e.remove if attributes.detect { |v| v.match(BLACKLIST) || v.match(ADS_PATTERN) }
     end
 
-    render inline: doc.to_s.html_safe
+    # TODO: solve encoding issue with accents.
+    kit = IMGKit.new(doc.to_s.html_safe)
+
+    # render inline: doc.to_s.html_safe
+
+    # send_data(kit.to_png, :type => "image/png", :disposition => 'inline')
   end
 end
