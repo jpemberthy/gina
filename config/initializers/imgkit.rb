@@ -1,7 +1,7 @@
 # config/initializers/imgkit.rb
 IMGKit.configure do |config|
   if Rails.env.production?
-    config.wkhtmltoimage = Rails.root.join('bin', 'wkhtmltoimage').to_s
+    config.wkhtmltoimage = Rails.root.join('bin', 'wkhtmltoimage-amd64').to_s
   else
     config.wkhtmltoimage = '/usr/local/bin/wkhtmltoimage'
   end
