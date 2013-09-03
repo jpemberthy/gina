@@ -18,6 +18,6 @@ class ArticlesController < ApplicationController
 
     # render inline: doc.to_s.html_safe
 
-    # send_data(kit.to_png, :type => "image/png", :disposition => 'inline')
+    send_data(kit.to_png, :type => "image/png", :disposition => 'inline')
   end
 end
