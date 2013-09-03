@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 gem 'mysql2'
@@ -24,6 +25,8 @@ end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'debugger', group: [:development, :test]
+
+gem 'rails_12factor', group: :production
 
 #core
 gem 'pismo'
